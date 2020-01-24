@@ -12,19 +12,26 @@ E-mail address <input type="text" name="t_email" id="t_email"/></br>
 </form>  
 <?php  
 /*Connect using SQL Server authentication.*/  
-$serverName = "tcp:febirappserver.database.windows.net,1433";  
-$connectionOptions = array(  
-    "Database" => "dicodingdb",  
-    "UID" => "febri",  
-    "PWD" => "Bendulmerisi14"  
-);  
-$conn = sqlsrv_connect($serverName, $connectionOptions);  
-  
+try {
+    $conn = new PDO("sqlsrv:server = tcp:febirappserver.database.windows.net,1433; Database = dicodingdb", "febri", "{your_password_here}");
+    $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+}
+catch (PDOException $e) {
+    print("Error connecting to SQL Server.");
+    die(print_r($e));
+}
+
+// SQL Server Extension Sample Code:
+// $connectionInfo = array("UID" => "febri", "pwd" => "{your_password_here}", "Database" => "dicodingdb", "LoginTimeout" => 30, "Encrypt" => 1, "TrustServerCertificate" => 0);
+// $serverName = "tcp:febirappserver.database.windows.net,1433";
+// $conn = sqlsrv_connect($serverName, $connectionInfo);
 if ($conn === false)  
     {  
     die(print_r(sqlsrv_errors() , true));  
     }  
   
+
+
 if (isset($_GET['action']))  
     {  
     if ($_GET['action'] == 'add')  
