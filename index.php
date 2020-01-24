@@ -59,7 +59,7 @@ VALUES (?,?,?,?)";
     }  
   
 /*Display registered people.*/  
-/*$sql = "SELECT * FROM empTable ORDER BY name"; 
+$sql = "SELECT * FROM empTable ORDER BY name"; 
 $stmt = sqlsrv_query($conn, $sql); 
 if($stmt === false) 
 { 
@@ -84,7 +84,7 @@ print("<td>".$row['email']."</td></tr>");
 } 
  
 print("</table>"); 
-}*/  
+}
 ?>  
 </body>  
 </html>  
