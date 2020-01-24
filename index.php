@@ -13,7 +13,7 @@ E-mail address <input type="text" name="t_email" id="t_email"/></br>
 <?php  
 /*Connect using SQL Server authentication.*/  
 try {
-    $conn = new PDO("sqlsrv:server = tcp:febirappserver.database.windows.net,1433; Database = dicodingdb", "febri", "{your_password_here}");
+    $conn = new PDO("sqlsrv:server = tcp:febirappserver.database.windows.net,1433; Database = dicodingdb", "febri", "Bendulmerisi14");
     $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 }
 catch (PDOException $e) {
@@ -22,9 +22,9 @@ catch (PDOException $e) {
 }
 
 // SQL Server Extension Sample Code:
-// $connectionInfo = array("UID" => "febri", "pwd" => "{your_password_here}", "Database" => "dicodingdb", "LoginTimeout" => 30, "Encrypt" => 1, "TrustServerCertificate" => 0);
-// $serverName = "tcp:febirappserver.database.windows.net,1433";
-// $conn = sqlsrv_connect($serverName, $connectionInfo);
+$connectionInfo = array("UID" => "febri", "pwd" => "{Bendulmerisi14}", "Database" => "dicodingdb", "LoginTimeout" => 30, "Encrypt" => 1, "TrustServerCertificate" => 0);
+$serverName = "tcp:febirappserver.database.windows.net,1433";
+$conn = sqlsrv_connect($serverName, $connectionInfo);
 if ($conn === false)  
     {  
     die(print_r(sqlsrv_errors() , true));  
