@@ -3,9 +3,9 @@
 
 	if($_GET['act'] == "add"){
 		/*Insert data.*/  
-        $insertSql = "INSERT INTO empTable (name, country, city, email)   
+        $insertSql = "INSERT INTO empTable (id, name, country, city, email)   
 					VALUES (?,?,?,?)";  
-        $params = array(&$_POST['name'], &$_POST['country'], &$_POST['city'], &$_POST['email']  
+        $params = array("06", &$_POST['name'], &$_POST['country'], &$_POST['city'], &$_POST['email']  
         );  
         $stmt = sqlsrv_query($conn, $insertSql, $params);  
         if ($stmt === false) {  
