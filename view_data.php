@@ -13,12 +13,22 @@ include 'head.php';
   </thead>
   <tbody>
     <?php
-    while($row = sqlsrv_fetch_array($stmt)){ 
-    print("<tr><th>".$row['id']."</th>"); 
-    print("<td>".$row['name']."</td>"); 
-    print("<td>".$row['country']."</td>"); 
-    print("<td>".$row['city']."</td></tr>"); 
-    }
+        $sql = "SELECT * FROM empTable ORDER BY name"; 
+        $stmt = sqlsrv_query($conn, $sql); 
+        if($stmt === false){ 
+        die(print_r(sqlsrv_errors(), true)); 
+        } 
+        
+        if(sqlsrv_has_rows($stmt)){
+            $number = 1;
+            while($row = sqlsrv_fetch_array($stmt)){ 
+            print("<tr><th>".$number."</th>"); 
+            print("<td>".$row['name']."</td>"); 
+            print("<td>".$row['country']."</td>"); 
+            print("<td>".$row['city']."</td></tr>"); 
+            $number++;
+            }
+        }
     ?> 
   </tbody>
 </table>
