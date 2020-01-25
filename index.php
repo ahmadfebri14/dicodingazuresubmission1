@@ -1,90 +1,62 @@
-<html>  
-<head>  
-<Title>Azure SQL Database - PHP Website</Title>  
-</head>  
-<body>  
-<form method="post" action="?action=add" enctype="multipart/form-data" >  
-Emp Id <input type="text" name="t_emp_id" id="t_emp_id"/></br>  
-Name <input type="text" name="t_name" id="t_name"/></br>  
-Education <input type="text" name="t_education" id="t_education"/></br>  
-E-mail address <input type="text" name="t_email" id="t_email"/></br>  
-<input type="submit" name="submit" value="Submit" />  
-</form>  
-<?php  
-/*Connect using SQL Server authentication.*/  
-$serverName = "tcp:febirappserver.database.windows.net,1433";  
-$connectionOptions = array(  
-    "Database" => "dicodingdb",  
-    "UID" => "febri",  
-    "PWD" => "Bendulmerisi14"  
-);  
-$conn = sqlsrv_connect($serverName, $connectionOptions);  
-  
-if ($conn === false)  
-    {  
-    die(print_r(sqlsrv_errors() , true));  
-    }    
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Jornal Submission</title>
 
+	<!-- link bootstrap css -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<!-- link bootstrap js -->
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+   
+</head>
+<body> 
+	<?php include 'head.php' ?>
+ 
+<div class="jumbotron jumbotron-fluid">
+  <div class="container">
+    <h1 class="display-4">Hello</h1>
+    <p class="lead">If you accidentally found this website, feel free to fill  in the form below 🍻</p>
+  </div>
+  
+  
+<div class="container">
+  <!-- Content here -->
+		<form action="./add.php?act=add" method="POST">
+		  <div class="form-group row">
+			<label for="inputEmail3" class="col-sm-2 col-form-label">Name</label>
+			<div class="col-sm-10">
+			  <input type="text" class="form-control" id="name" name="name" placeholder="Name">
+			</div>
+		  </div><div class="form-group row">
+			<label for="inputEmail3" class="col-sm-2 col-form-label">Country</label>
+			<div class="col-sm-10">
+			  <input type="text" class="form-control" id="country" name="country" placeholder="Country">
+			</div>
+		  </div>
+		  <div class="form-group row">
+			<label for="inputEmail3" class="col-sm-2 col-form-label">City</label>
+			<div class="col-sm-10">
+			  <input type="text" class="form-control" id="city" name="city" placeholder="City">
+			</div>
+		  </div>
+		  <div class="form-group row">
+			<label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+			<div class="col-sm-10">
+			  <input type="email" class="form-control" id="email" name="email" placeholder="Email">
+			</div>
+		  </div>
+		  
+		  <div class="form-group row">
+			<div class="col-sm-10">
+			  <button type="submit" class="btn btn-primary">Submit</button>
+			</div>
+		  </div>
+		</form>
+	</div>
 
-if (isset($_GET['action']))  
-    {  
-    if ($_GET['action'] == 'add')  
-        {  
-        /*Insert data.*/  
-        $insertSql = "INSERT INTO empTable (emp_id,name,education,email)   
-VALUES (?,?,?,?)";  
-        $params = array(&$_POST['t_emp_id'], &$_POST['t_name'], &$_POST['t_education'], &$_POST['t_email']  
-        );  
-        $stmt = sqlsrv_query($conn, $insertSql, $params);  
-        if ($stmt === false)  
-            {  
-            /*Handle the case of a duplicte e-mail address.*/  
-            $errors = sqlsrv_errors();  
-            if ($errors[0]['code'] == 2601)  
-                {  
-                echo "The e-mail address you entered has already been used.</br>";  
-                }  
-  
-            /*Die if other errors occurred.*/  
-              else  
-                {  
-                die(print_r($errors, true));  
-                }  
-            }  
-          else  
-            {  
-            echo "Registration complete.</br>";  
-            }  
-        }  
-    }  
-  
-/*Display registered people.*/  
-$sql = "SELECT * FROM empTable ORDER BY name"; 
-$stmt = sqlsrv_query($conn, $sql); 
-if($stmt === false) 
-{ 
-die(print_r(sqlsrv_errors(), true)); 
-} 
- 
-if(sqlsrv_has_rows($stmt)) 
-{ 
-print("<table border='1px'>"); 
-print("<tr><td>Emp Id</td>"); 
-print("<td>Name</td>"); 
-print("<td>education</td>"); 
-print("<td>Email</td></tr>"); 
- 
-while($row = sqlsrv_fetch_array($stmt)) 
-{ 
- 
-print("<tr><td>".$row['emp_id']."</td>"); 
-print("<td>".$row['name']."</td>"); 
-print("<td>".$row['education']."</td>"); 
-print("<td>".$row['email']."</td></tr>"); 
-} 
- 
-print("</table>"); 
-}
-?>  
-</body>  
-</html>  
+</div>
+</body>
+</html>
