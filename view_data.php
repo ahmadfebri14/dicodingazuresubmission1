@@ -4,8 +4,8 @@ include 'head.php';
 
 <div class="container">
 <!-- Content here -->
-    <table class="table table-hover">
-    <thead>
+    <table class="table table-hover table-bordered">
+    <thead class="thead-dark">
         <tr>
         <th scope="col">#</th>
         <th scope="col">Name</th>
