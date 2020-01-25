@@ -5,6 +5,7 @@ include 'head.php';
 <br>
 <div class="container">
 <!-- Content here -->
+    <br>
     <table class="table table-hover table-bordered">
     <thead class="thead-dark">
         <tr>
