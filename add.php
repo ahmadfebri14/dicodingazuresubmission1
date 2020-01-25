@@ -1,4 +1,6 @@
 <?php
+	include 'cennection.php';
+
 	if($_GET['act'] == "add"){
 		/*Insert data.*/  
         $insertSql = "INSERT INTO empTable (name, country, city, email)   
