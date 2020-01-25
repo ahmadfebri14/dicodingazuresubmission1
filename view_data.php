@@ -2,6 +2,7 @@
 include 'head.php';
 ?>
 
+<br>
 <div class="container">
 <!-- Content here -->
     <table class="table table-hover table-bordered">
