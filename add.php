@@ -30,7 +30,7 @@ VALUES (?,?,?,?)";
             }  
           else  
             {  
-            echo "Registration complete.</br>";  
+				echo '<script> alert("Data has been saved"); window.location.href="./index.php"; </script>';
             }  
         }  
 ?>
