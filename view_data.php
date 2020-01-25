@@ -2,7 +2,6 @@
 include 'head.php';
 ?>
 
-<br>
 <div class="container">
 <!-- Content here -->
     <br>
