@@ -22,10 +22,10 @@ include 'head.php';
         if(sqlsrv_has_rows($stmt)){
             $number = 1;
             while($row = sqlsrv_fetch_array($stmt)){ 
-            print("<tr><th>".$number."</th>"); 
-            print("<td>".$row['name']."</td>"); 
-            print("<td>".$row['country']."</td>"); 
-            print("<td>".$row['city']."</td></tr>"); 
+            echo("<tr><th>".$number."</th>"); 
+            echo("<td>".$row['name']."</td>"); 
+            echo("<td>".$row['country']."</td>"); 
+            echo("<td>".$row['city']."</td></tr>"); 
             $number++;
             }
         }
