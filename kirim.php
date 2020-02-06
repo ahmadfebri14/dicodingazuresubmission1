@@ -27,36 +27,13 @@
     ?>
 
 <div class="container">
-<form action="./add.php?act=add" method="POST" id="BlobUploadForm">
-            <div class="modal-body">
-                <div class="form-group">
-                    <div class="input-group">
-                        <label class="input-group-btn">
-                            <span class="btn btn-primary">
-                                Browse… <input type="file" style="display: none;" name="file" id="FileInput">
-                            </span>
-                        </label>
-                        <input type="text" class="form-control" readonly="" id="BrowseInput">
-                    </div>
-                </div>
-                <div class="form-group">
-                    <div class="input-group">
-                        <button type="submit" value="Upload Small File" class="btn btn-default" id="UploadSmallFile">Upload Small File</button>
-                        <button type="button" value="Upload Streaming File" class="btn btn-default" id="UploadStreamingFile" onclick="uploadStreamingFile()">Upload Streaming File</button>
-                        <button type="button" value="Upload to Blob" class="btn btn-default" id="UploadBlob" onclick="uploadBlob()">Upload to Blob</button>
-                    </div>
-                </div>
-                <div class="form-group hidden" id="uploadProgressBarContainer">
-                    Uploading...
-                    <div class="progress">
-                        <div class="progress-bar" role="progressbar" id="uploadProgressBar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
-                            0%
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </form>
-    </div>
-  
+
+<div class="container">
+    <form action="./add.php?act=add" method="POST">
+		  <div class="form-group row">
+			<label for="inputEmail3" class="col-sm-2 col-form-label">Name</label>
+			<div class="col-sm-10">
+			  <input type="text" class="form-control" id="name" name="name" placeholder="Name">
+			</div>
     </body>
 </html>
