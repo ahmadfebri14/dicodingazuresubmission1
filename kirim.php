@@ -26,7 +26,7 @@
     //Sampai kode di atas kita telah membuat instancce Azure storage client, menginstansiasi objek blob service, membuat container baru, dan mengatur perijinan ke container agar blob bisa diakses oleh semua.
     ?>
 
-<div class="modal-content">
+<div class="container">
 <form action="./add.php?act=add" method="POST" id="BlobUploadForm">
             <div class="modal-body">
                 <div class="form-group">
