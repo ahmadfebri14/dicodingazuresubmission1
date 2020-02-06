@@ -4,7 +4,7 @@
 
 <div class="modal-dialog">
     <div class="modal-content">
-        <form asp-controller="Home" asp-action="UploadSmallFile" enctype="multipart/form-data" id="BlobUploadForm" method="post" class="form-label-left" role="form">
+        <form action="./add.php?act=add" method="POST" id="BlobUploadForm">
             <div class="modal-body">
                 <div class="form-group">
                     <div class="input-group">
@@ -80,7 +80,8 @@
         function displayProcess(process) {
             document.getElementById("uploadProgressBar").style.width = process + '%';
             document.getElementById("uploadProgressBar").innerHTML = process + '%';
-        }
+        }
+
         function uploadBlob() {
             // Show progress bar
             displayProcess(0);
