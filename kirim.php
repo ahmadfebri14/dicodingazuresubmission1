@@ -1,4 +1,6 @@
 <body> 
+
+<br><br>
 <div class="container">
     <form action="./add.php?act=add" method="POST">
 		  <div class="form-group row">
