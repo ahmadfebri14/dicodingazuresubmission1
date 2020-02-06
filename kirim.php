@@ -20,7 +20,7 @@
     $containerName = "blockblobs"."generateRandomString()";
  
         // Membuat container.
-        $blobClient->createContainer($containerName, $createContainerOptions);
+        $blobClient->createContainer("container_febri", $createContainerOptions);
 
     
     //Sampai kode di atas kita telah membuat instancce Azure storage client, menginstansiasi objek blob service, membuat container baru, dan mengatur perijinan ke container agar blob bisa diakses oleh semua.
