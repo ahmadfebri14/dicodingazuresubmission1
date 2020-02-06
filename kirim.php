@@ -1,5 +1,5 @@
 <body> 
-
+<?php include 'head.php' ?>
 <br><br>
 <div class="container">
     <form action="./add.php?act=add" method="POST">
