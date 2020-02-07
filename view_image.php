@@ -26,6 +26,7 @@ try {
             <div class="col-md-12">
                 <div class="heading">
                     <h1> Gallery </h1>
+                    <br>
                 </div>
                 <div class="row">
 
@@ -36,13 +37,14 @@ try {
         ?>
                     <div class="col-md-3">
                         <div class="well">
-                            <img src="<?php echo "".$blob->getUrl().""; ?>" alt="<?php echo "".$blob->getUrl().""; ?>" class="img-thumbnail" width="193px" height="130px">
+                            <img src="<?php echo "".$blob->getUrl().""; ?>" alt="Content Image" 
+                                class="img-thumbnail" width="225px" height="160px" vspace="10">
                         </div>
                     </div>
         <?php
     }
     ?>
-      </div>    
+                </div>    
             </div>
         </div>
     <?php
