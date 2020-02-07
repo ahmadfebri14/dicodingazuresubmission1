@@ -10,7 +10,7 @@ use MicrosoftAzure\Storage\Blob\Models\PublicAccessType;
 
 
 //cek apakah data kosong
-if (empty($_POST["file"])) {
+if (empty($_FILES['file']['name'])) {
     echo '<script> alert("You haven\'t selected any pictures yet"); window.location.href="./kirim.php"; </script>';
 } else {
 
