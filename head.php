@@ -36,7 +36,7 @@
           <a class="dropdown-item" href="#">Upload Image</a>
           <a class="dropdown-item" href="#">Gallery</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">analyze</a>
+          <a class="dropdown-item" href="#">Analyze Image</a>
         </div>
     </ul>
     <form class="form-inline my-2 my-lg-0">

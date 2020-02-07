@@ -9,7 +9,7 @@
 			<br>
 		  	<div class="form-group row">
 				<div class="col-sm-10">
-					<input type="file" id="file" name="file" class="form-control" style="padding:125px;" >
+					<input type="file" id="file" name="file" class="form-control" style="padding:10px;" >
 				</div>
 			</div>
 		  
