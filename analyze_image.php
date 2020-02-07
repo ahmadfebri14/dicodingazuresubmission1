@@ -21,7 +21,7 @@
         // If you use a free trial subscription key, you shouldn't need to change
         // this region.
         var uriBase =
-            "https://febrivision.cognitiveservices.azure.com/";
+            "https://southeastasia.api.cognitive.microsoft.com/vision/v2.0/analyze";
  
         // Request parameters.
         var params = {
@@ -71,7 +71,7 @@
 Enter the URL to an image, then click the <strong>Analyze image</strong> button.
 <br><br>
 Image to analyze:
-<input type="text" name="inputImage" id="inputImage"/>
+<input type="text" name="inputImage" id="inputImage" />
 <button onclick="processImage()">Analyze image</button>
 <br><br>
 <div id="wrapper" style="width:1020px; display:table;">
