@@ -1,6 +1,6 @@
-<body> 
-<?php include 'head.php' ?>
-<br><br>
+ <?php include 'head.php' ?>
+<body>
+<br><b>
 <div class="container">
     <!-- Content here -->
 		<form action="./simpan_gambar.php" method="POST" enctype="multipart/form-data">
@@ -21,8 +21,7 @@
 				<br>
 		  		<div class="input-group mb-3">
 					<div class="custom-file">
-						<input type="file" class="custom-file-input" id="file" name="file">
-						<label class="custom-file-label"></label>
+						<input type="file" class="custom-file-input-dua" id="file" name="file">
 					</div>
 					<div class="input-group-append">
 						<button type="submit" class="input-group-text">Upload</button>
