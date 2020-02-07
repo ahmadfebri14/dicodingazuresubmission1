@@ -21,7 +21,8 @@
 				<br>
 		  		<div class="input-group mb-3">
 					<div class="custom-file">
-						<input type="file" class="custom-file-input" id="file" name="file" placeholder="Choose Image">
+						<input type="file" class="custom-file-input" id="file" name="file">
+						<label class="custom-file-label" >Choose file</label>
 					</div>
 					<div class="input-group-append">
 						<button type="submit" class="input-group-text">Upload</button>
