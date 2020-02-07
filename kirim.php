@@ -18,14 +18,14 @@
 
 		  	<div class="container">
 			  <h3> Input Image </h3>
-				<br><br>
+				<br>
 		  		<div class="input-group mb-3">
 					<div class="custom-file">
-						<input type="file" class="custom-file-input" id="file" name="file">
-						<label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Choose file</label>
+						<input type="file" class="custom-file-input" id="file" name="file" placeholder="Choose Image">
 					</div>
 					<div class="input-group-append">
-						<span class="input-group-text" id="inputGroupFileAddon02">Upload</span>
+						<button type="submit" class="input-group-text">Upload</button>
+						<!-- <span class="input-group-text" id="inputGroupFileAddon02">Upload</span> -->
 					</div>
 				</div>	
 			</div>
