@@ -8,6 +8,12 @@ use MicrosoftAzure\Storage\Blob\Models\ListBlobsOptions;
 use MicrosoftAzure\Storage\Blob\Models\CreateContainerOptions;
 use MicrosoftAzure\Storage\Blob\Models\PublicAccessType;
 
+
+//cek apakah data kosong
+if (empty($_POST["file"])) {
+    echo '<script> alert("You haven\'t selected any pictures yet"); window.location.href="./kirim.php"; </script>';
+} else {
+
 $connectionString = "DefaultEndpointsProtocol=https;AccountName=febriwebapp;AccountKey=fyDYKm7G7lA14EsLvCh6NNGT5tXK4qZMdXEsMVlr5Apm8GA5CxoZa1b3ITnTH79CI3i5k1qVPiZh8u9p+teSqA==;EndpointSuffix=core.windows.net";
 
 // Create blob client.
@@ -62,4 +68,5 @@ $fileToUpload = $nama;
     }
 
     echo '<script> alert("Image has been upload"); window.location.href="./view_image.php"; </script>';
+}
 ?>
