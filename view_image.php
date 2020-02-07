@@ -26,7 +26,7 @@ try {
         
         ?>
 
-        <img src="<?php echo "".$blob->getUrl().""; ?>" alt="<?php echo "".$blob->getUrl().""; ?>" class="img-thumbnail">
+        <img src="<?php echo "".$blob->getUrl().""; ?>" alt="<?php echo "".$blob->getUrl().""; ?>" class="img-thumbnail" width="193px" height="130px">
 
         <!-- <img class="img-profile rounded-circle" src="<?php echo "".$blob->getUrl().""; ?>"> -->
         <br>
