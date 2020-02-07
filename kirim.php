@@ -9,7 +9,7 @@
 			<br>
 		  	<div class="form-group row">
 				<div class="col-sm-10">
-					<input type="file" id="file" name="file" class="form-control" style="padding-bottom: 30px;" >
+					<input type="file" id="file" name="file" class="form-control" style="padding-bottom: 30px;" accept="image/*">
 				</div>
 			</div>
 		  
