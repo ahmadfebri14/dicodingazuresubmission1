@@ -1,6 +1,9 @@
-<?php include 'head.php' ?>
-<br><br>
-
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Analyze Sample</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+</head>
 <body>
  
 <script type="text/javascript">
@@ -10,7 +13,7 @@
         // **********************************************
  
         // Replace <Subscription Key> with your valid subscription key.
-        var subscriptionKey = "2991b6fccca14af79420e8265a562";
+        var subscriptionKey = "2991b6fccca14af79420e8265a724562";
  
         // You must use the same Azure region in your REST API method as you used to
         // get your subscription keys. For example, if you got your subscription keys
@@ -53,7 +56,6 @@
  
         .done(function(data) {
             // Show formatted JSON on webpage.
-            alert(errorString);
             $("#responseTextArea").val(JSON.stringify(data, null, 2));
         })
  
@@ -72,7 +74,8 @@
 Enter the URL to an image, then click the <strong>Analyze image</strong> button.
 <br><br>
 Image to analyze:
-<input type="text" name="inputImage" id="inputImage" />
+<input type="text" name="inputImage" id="inputImage"
+    value="http://upload.wikimedia.org/wikipedia/commons/3/3c/Shaki_waterfall.jpg" />
 <button onclick="processImage()">Analyze image</button>
 <br><br>
 <div id="wrapper" style="width:1020px; display:table;">
@@ -89,3 +92,4 @@ Image to analyze:
     </div>
 </div>
 </body>
+</html>
