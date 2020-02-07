@@ -10,7 +10,7 @@
         // **********************************************
  
         // Replace <Subscription Key> with your valid subscription key.
-        var subscriptionKey = "2991b6fccca14af79420e8265a724562";
+        var subscriptionKey = "2991b6fccca14af79420e8265a562";
  
         // You must use the same Azure region in your REST API method as you used to
         // get your subscription keys. For example, if you got your subscription keys
@@ -53,7 +53,7 @@
  
         .done(function(data) {
             // Show formatted JSON on webpage.
-            alert(data);
+            alert(errorString);
             $("#responseTextArea").val(JSON.stringify(data, null, 2));
         })
  
@@ -72,9 +72,8 @@
 Enter the URL to an image, then click the <strong>Analyze image</strong> button.
 <br><br>
 Image to analyze:
-<form action="./analis.php?act=add" method="POST">
 <input type="text" name="inputImage" id="inputImage" />
-<button type="submit" class="btn btn-primary">Analyze image</button>
+<button onclick="processImage()">Analyze image</button>
 <br><br>
 <div id="wrapper" style="width:1020px; display:table;">
     <div id="jsonOutput" style="width:600px; display:table-cell;">
