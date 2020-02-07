@@ -1,3 +1,5 @@
+<?php include 'head.php' ?>
+<br><br>
 <?php
 /**----------------------------------------------------------------------------------
 * Microsoft Developer & Platform Evangelism
