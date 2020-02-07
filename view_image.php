@@ -38,7 +38,7 @@ try {
                     <div class="col-md-3">
                         <div class="well">
                             <img src="<?php echo "".$blob->getUrl().""; ?>" alt="Content Image" 
-                                class="img-thumbnail" width="225px" height="160px" vspace="10">
+                                class="img-thumbnail" width="195px" height="130px" vspace="10">
                         </div>
                     </div>
         <?php
