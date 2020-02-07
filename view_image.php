@@ -23,12 +23,14 @@ try {
 
     foreach($blobs as $blob)
     {
-        
         ?>
-
-        <img src="<?php echo "".$blob->getUrl().""; ?>" alt="<?php echo "".$blob->getUrl().""; ?>" class="img-thumbnail" width="193px" height="130px">
-
-        <!-- <img class="img-profile rounded-circle" src="<?php echo "".$blob->getUrl().""; ?>"> -->
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <img src="<?php echo "".$blob->getUrl().""; ?>" alt="<?php echo "".$blob->getUrl().""; ?>" class="img-thumbnail" width="193px" height="130px">
+                </div>    
+            </div>
+        </div>
         <br>
         <?php
     }
