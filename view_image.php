@@ -34,7 +34,7 @@ try {
     foreach($blobs as $blob)
     {
         ?>
-                    <div class="col-md-4">
+                    <div class="col-md-3">
                         <div class="well">
                             <img src="<?php echo "".$blob->getUrl().""; ?>" alt="<?php echo "".$blob->getUrl().""; ?>" class="img-thumbnail" width="193px" height="130px">
                         </div>
