@@ -20,26 +20,32 @@ try {
     // List blobs.
     $blob_list = $blobClient->listBlobs("imagefile");
     $blobs = $blob_list->getBlobs();
+    ?>
 
-    foreach($blobs as $blob)
-    {
-        ?>
         <div class="container">
             <div class="row-mtb-60">
                 <div class="heading">
                     <h1> Gallery </h1>
                 </div>
                 <div class="row">
+
+    <?php
+    
+    foreach($blobs as $blob)
+    {
+        ?>
                     <div class="col-md-4">
                         <div class="well">
                             <img src="<?php echo "".$blob->getUrl().""; ?>" alt="<?php echo "".$blob->getUrl().""; ?>" class="img-thumbnail" width="193px" height="130px">
                         </div>
                     </div>
-                </div>    
-            </div>
-        </div>
         <?php
     }
+    ?>
+      </div>    
+            </div>
+        </div>
+    <?php
 } catch(ServiceException $e){
     $code = $e->getCode();
     $error_message = $e->getMessage();
