@@ -17,10 +17,10 @@
 		  </div> -->
 
 		  	<div class="container">
+			  <h3> Input Image </h3>
+				<br><br>
 		  		<div class="input-group mb-3">
 					<div class="custom-file">
-						<h3> Input Image </h3>
-						<br>
 						<input type="file" class="custom-file-input" id="file" name="file">
 						<label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Choose file</label>
 					</div>
