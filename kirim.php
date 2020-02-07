@@ -7,7 +7,7 @@
 		  <div class="form-group row">
 			<label for="inputEmail3" class="col-sm-2 col-form-label">Name</label>
 			<div class="col-sm-10">
-			  <input type="file" class="form-control" id="file" name="file">
+			  <input type="file" id="file" name="file">
 			</div>
 		  
 		  <div class="form-group row">
