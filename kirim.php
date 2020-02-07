@@ -8,15 +8,14 @@
 			<h3> Input Image </h3>
 			<br>
 		  	<div class="form-group row">
-				<label for="inputEmail3" class="col-sm-2 col-form-label">Name</label>
-					<div class="col-sm-10">
-			  			<input type="file" id="file" name="file">
-					</div>
+				<div class="col-sm-10">
+					<input type="file" id="file" name="file" class="form-control">
+				</div>
 			</div>
 		  
 		  <div class="form-group row">
 			<div class="col-sm-10">
-			  <button type="submit" class="btn btn-primary">Submit</button>
+			  <button type="submit" class="btn btn-primary">Upload</button>
 			</div>
 		  </div>
 		</div>	
