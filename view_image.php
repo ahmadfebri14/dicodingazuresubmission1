@@ -25,9 +25,16 @@ try {
     {
         ?>
         <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <img src="<?php echo "".$blob->getUrl().""; ?>" alt="<?php echo "".$blob->getUrl().""; ?>" class="img-thumbnail" width="193px" height="130px">
+            <div class="row-mtb-60">
+                <div class="heading">
+                    <h1> Gallery </h1>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="well">
+                            <img src="<?php echo "".$blob->getUrl().""; ?>" alt="<?php echo "".$blob->getUrl().""; ?>" class="img-thumbnail" width="193px" height="130px">
+                        </div>
+                    </div>
                 </div>    
             </div>
         </div>
