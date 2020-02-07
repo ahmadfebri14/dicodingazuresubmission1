@@ -15,15 +15,6 @@ $connectionString = "DefaultEndpointsProtocol=https;AccountName=febriwebapp;Acco
 // Create blob client.
 $blobClient = BlobRestProxy::createBlobService($connectionString);
 
-// do{
-//     $result = $blobClient->listBlobs("blockblobsigbyui");
-//     foreach ($result->getBlobs() as $blob)
-//     {
-//         echo $blob->getName().": ".$blob->getUrl()."<br />";
-//     }
-
-//     // $listBlobsOptions->setContinuationToken($result->getContinuationToken());
-// } while($result->getContinuationToken());
 echo "<br />";
 try {
     // List blobs.
@@ -32,26 +23,14 @@ try {
 
     foreach($blobs as $blob)
     {
-        // echo $blob->getName().": ".$blob->getUrl()."<br />";
-
-        // https://febriwebapp.blob.core.windows.net/blockblobsigbyui/andro.png
-
-        // echo "".$blob->getUrl()."";
+        
         ?>
 
-        <img class="img-profile rounded-circle" src="<?php echo "".$blob->getUrl().""; ?>">
+        <img src="<?php echo "".$blob->getUrl().""; ?>" alt="<?php echo "".$blob->getUrl().""; ?>" class="img-thumbnail">
+
+        <!-- <img class="img-profile rounded-circle" src="<?php echo "".$blob->getUrl().""; ?>"> -->
         <br>
         <?php
-        // echo "<br>";
-        // echo "<img src=";
-        // echo "".$blob->getUrl()."";
-        // echo "/>\"";
-
-        // echo "<img src=";
-        // echo "https://febriwebapp.blob.core.windows.net/";
-        // echo $containerName;
-        // echo "/";
-        // echo $fileToUpload;
     }
 } catch(ServiceException $e){
     $code = $e->getCode();
