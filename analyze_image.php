@@ -53,6 +53,7 @@
  
         .done(function(data) {
             // Show formatted JSON on webpage.
+            alert(data);
             $("#responseTextArea").val(JSON.stringify(data, null, 2));
         })
  
