@@ -72,8 +72,9 @@
 Enter the URL to an image, then click the <strong>Analyze image</strong> button.
 <br><br>
 Image to analyze:
+<form action="./analis.php?act=add" method="POST">
 <input type="text" name="inputImage" id="inputImage" />
-<button onclick="processImage()">Analyze image</button>
+<button type="submit" class="btn btn-primary">Analyze image</button>
 <br><br>
 <div id="wrapper" style="width:1020px; display:table;">
     <div id="jsonOutput" style="width:600px; display:table-cell;">
