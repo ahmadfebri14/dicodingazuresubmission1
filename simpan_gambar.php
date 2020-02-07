@@ -35,9 +35,9 @@ $fileToUpload = $nama;
     try {
         
         # Upload file as a block blob
-        echo "Uploading BlockBlob: ".PHP_EOL;
-        echo $fileToUpload;
-        echo "<br />";
+        // echo "Uploading BlockBlob: ".PHP_EOL;
+        // echo $fileToUpload;
+        // echo "<br />";
         
         $content = fopen($tmp_file, "r");
 

@@ -33,8 +33,8 @@
           Submission 2
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Upload Image</a>
-          <a class="dropdown-item" href="#">Gallery</a>
+          <a class="dropdown-item" href="kirim.php">Upload Image</a>
+          <a class="dropdown-item" href="view_image.php">Gallery</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="#">Analyze Image</a>
         </div>
