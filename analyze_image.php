@@ -80,13 +80,12 @@ session_start();
 			</div>
 		  </div>
 		  
-		  <div class="form-group row">
+		  <!-- <div class="form-group row">
 			<div class="col-sm-10">
             <button class="btn btn-primary">Analyze image</button>
 			</div>
-		  </div>
+		  </div> -->
     
-    <br><br>
     <div id="wrapper" style="width:1020px; display:table;">
         <div id="jsonOutput" style="width:600px; display:table-cell;">
             Response:
