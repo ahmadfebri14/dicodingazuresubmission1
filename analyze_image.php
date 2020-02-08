@@ -9,7 +9,8 @@ header('Access-Control-Allow-Origin: *');
     
 </head>
 <body>
- 
+<?php include 'webconfig.php'?>
+<?php include 'web.xml' ?>
 
 <?php
 function cors() {
