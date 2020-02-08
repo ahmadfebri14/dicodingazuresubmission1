@@ -80,7 +80,7 @@ if($_GET['act'] == "add"){
                 echo $code.": ".$error_message."<br />";
             }
         
-            echo '<script> alert("Image has been upload"); window.location.href="./view_image.php"; </script>';
+            echo '<script> alert("Image has been upload"); </script>';
             $url_gambar = $blob->getUrl();
         }
 }
