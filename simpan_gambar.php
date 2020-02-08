@@ -68,5 +68,6 @@ $fileToUpload = $nama;
     }
 
     echo '<script> alert("Image has been upload"); window.location.href="./view_image.php"; </script>';
+    
 }
 ?>
