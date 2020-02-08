@@ -29,7 +29,7 @@ session_start();
         };
  
         // Display the image.
-        var sourceImageUrl = <?php echo $_SESSION['name']; ?>
+        var sourceImageUrl = document.getElementById("inputImage").value;
         document.querySelector("#sourceImage").src = sourceImageUrl;
  
         // Make the REST API call.
