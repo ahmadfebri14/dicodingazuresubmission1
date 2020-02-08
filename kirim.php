@@ -3,7 +3,7 @@
 <br><b>
 <div class="container">
     <!-- Content here -->
-		<form action="./analyze_image.php?act=add" method="POST" enctype="multipart/form-data">
+		<form action="./simpan_gambar.php" method="POST" enctype="multipart/form-data">
 		<div class="container">
 			<h3> Input Image </h3>
 			<br>
