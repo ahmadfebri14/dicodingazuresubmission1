@@ -2,6 +2,8 @@
 <html>
 <head>
     <title>Analyze Sample</title>
+	<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
+	    <!-- <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 </head>
