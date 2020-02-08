@@ -11,7 +11,17 @@
 <?php include 'head.php' ?>
 <br><br>
 
-<?php
+<div class="container">
+    <h1>Analyze image:</h1>
+    Enter the URL to an image, then click the <strong>Analyze image</strong> button.
+    <br><br>
+    
+    <div class="form-group row">
+			<label for="inputEmail3" class="col-sm-2 col-form-label">URL</label>
+			<div class="col-sm-10">
+                <input type="text" name="inputImage" id="inputImage" class="form-control"
+                value="<?php 
+     
 require_once 'vendor/autoload.php';
 require_once "./random_string.php";
 
@@ -82,19 +92,8 @@ if($_GET['act'] == "add"){
             }
             $url_gambar = $blob->getUrl();
             echo $url_gambar;
-    
 ?>
-
-<div class="container">
-    <h1>Analyze image:</h1>
-    Enter the URL to an image, then click the <strong>Analyze image</strong> button.
-    <br><br>
-    
-    <div class="form-group row">
-			<label for="inputEmail3" class="col-sm-2 col-form-label">URL</label>
-			<div class="col-sm-10">
-                <input type="text" name="inputImage" id="inputImage" class="form-control"
-                value="<?php echo $url_gambar?>"/>
+                "/>
 			</div>
 		  </div>
 		  
