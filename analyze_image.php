@@ -82,7 +82,7 @@ if($_GET['act'] == "add"){
         
             echo '<script> alert("Image has been upload"); </script>';
             $url_gambar = $blob->getUrl();
-        }
+        
 
 ?>
 
@@ -148,7 +148,7 @@ if($_GET['act'] == "add"){
 			<label for="inputEmail3" class="col-sm-2 col-form-label">URL</label>
 			<div class="col-sm-10">
                 <input type="text" name="inputImage" id="inputImage" class="form-control"
-                value="<?php echo $url_gambar;?>"/>
+                value="<?php echo $url_gambar?>"/>
 			</div>
 		  </div>
 		  
@@ -174,6 +174,7 @@ if($_GET['act'] == "add"){
 </div>
 </div> 
 <?php
+}
 }
 ?>
 </body>
