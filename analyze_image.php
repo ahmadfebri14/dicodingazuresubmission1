@@ -12,9 +12,6 @@
 <br><br>
 <?php 
 session_start();
-echo "This page 2";
-echo "<br><br>";
-echo $_SESSION['name'];
 ?>
 
 <script type="text/javascript">
@@ -78,13 +75,14 @@ echo $_SESSION['name'];
     <div class="form-group row">
 			<label for="inputEmail3" class="col-sm-2 col-form-label">URL</label>
 			<div class="col-sm-10">
-                <input type="text" name="inputImage" id="inputImage" class="form-control"/>
+                <input type="text" name="inputImage" id="inputImage" class="form-control"
+                value="<?php echo $_SESSION['name']; ?>"/>
 			</div>
 		  </div>
 		  
 		  <div class="form-group row">
 			<div class="col-sm-10">
-            <button onclick="processImage()" class="btn btn-primary">Analyze image</button>
+            <button class="btn btn-primary">Analyze image</button>
 			</div>
 		  </div>
     
@@ -103,5 +101,11 @@ echo $_SESSION['name'];
         </div>
 </div>
 </div>
+
+<script>
+		window.onload = function() {
+            processImage()
+};
+</script>
 </body>
 </html>
