@@ -2,14 +2,12 @@
 <html>
 <head>
     <title>Analyze Sample</title>
-    <!-- <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">  -->
-    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> -->
-    <!-- <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 </head>
 <body>
- 
+<?php include 'head.php' ?>
+<br><br>
 <script type="text/javascript">
     function processImage() {
         var subscriptionKey = "2991b6fccca14af79420e8265a724562";
@@ -64,22 +62,37 @@
 <h1>Analyze image:</h1>
 Enter the URL to an image, then click the <strong>Analyze image</strong> button.
 <br><br>
-Image to analyze:
-<input type="text" name="inputImage" id="inputImage"/>
-<button onclick="processImage()">Analyze image</button>
-<br><br>
-<div id="wrapper" style="width:1020px; display:table;">
-    <div id="jsonOutput" style="width:600px; display:table-cell;">
-        Response:
-        <br><br>
-        <textarea id="responseTextArea" class="UIInput"
-                  style="width:580px; height:400px;"></textarea>
-    </div>
-    <div id="imageDiv" style="width:420px; display:table-cell;">
-        Source image:
-        <br><br>
-        <img id="sourceImage" width="400" />
-    </div>
+
+<div class="container">
+    <h3>Analyze Image </h3>
+    
+    <div class="form-group row">
+			<label for="inputEmail3" class="col-sm-2 col-form-label">URL</label>
+			<div class="col-sm-10">
+                <input type="text" name="inputImage" id="inputImage" class="form-control"/>
+			</div>
+		  </div>
+		  
+		  <div class="form-group row">
+			<div class="col-sm-10">
+            <button onclick="processImage()" class="btn btn-primary">Analyze image</button>
+			</div>
+		  </div>
+    
+    <br><br>
+    <div id="wrapper" style="width:1020px; display:table;">
+        <div id="jsonOutput" style="width:600px; display:table-cell;">
+            Response:
+            <br><br>
+            <textarea id="responseTextArea" class="UIInput"
+                    style="width:580px; height:400px;"></textarea>
+        </div>
+        <div id="imageDiv" style="width:420px; display:table-cell;">
+            Source image:
+            <br><br>
+            <img id="sourceImage" width="400" />
+        </div>
+</div>
 </div>
 </body>
 </html>
