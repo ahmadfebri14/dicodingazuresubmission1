@@ -59,12 +59,12 @@
     };
 </script>
  
-<h1>Analyze image:</h1>
-Enter the URL to an image, then click the <strong>Analyze image</strong> button.
-<br><br>
+
 
 <div class="container">
-    <h3>Analyze Image </h3>
+    <h1>Analyze image:</h1>
+    Enter the URL to an image, then click the <strong>Analyze image</strong> button.
+    <br><br>
     
     <div class="form-group row">
 			<label for="inputEmail3" class="col-sm-2 col-form-label">URL</label>
