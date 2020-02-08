@@ -68,7 +68,7 @@ $fileToUpload = $nama;
     }
 
     session_start();
-    $_SESSION['name'] = "https://febriwebapp.blob.core.windows.net/".$containerName.$fileToUpload;
+    $_SESSION['name'] = "https://febriwebapp.blob.core.windows.net/".$containerName."/".$fileToUpload;
     echo '<script> alert("Image has been upload"); window.location.href="./analyze_image.php"; </script>';
     
 }
