@@ -10,7 +10,12 @@
 <body>
 <?php include 'head.php' ?>
 <br><br>
-
+<?php 
+session_start();
+echo "This page 2";
+echo "<br><br>";
+echo $_SESSION['name'];
+?>
 
 <script type="text/javascript">
     function processImage() {
