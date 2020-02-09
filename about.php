@@ -5,8 +5,19 @@
 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+<br><b>
+<div class="container">
+<img src="image/profil2.jpeg">
+            <h1>Ahmad Febri</h1>
+            <h4>Junior Android and Web Developer</h4>
+            <h2>About me</h2>
+            <p>Hello i'm Febri. I'm a computer science student at Stikom Surabaya which now changes its name to Universitas Dinamika Surabaya.
+            Iam a passionate android and web devoleper, i have good knowledge at Android(Java) and CodeIgniter(Php, Jquery). I also have good knowledge about data structure and 
+            usually i use Oracle or PhpMyAdmin for database. </p>
+            <p>The thing I've been excited about lately are Artificial Intelligence, Expert Systems, Data Science and Augmented Reality.</p>
 
-        <div class="content">
+</div>
+        <!-- <div class="content">
             <img src="image/profil2.jpeg">
             <h1>Ahmad Febri</h1>
             <h4>Junior Android and Web Developer</h4>
@@ -15,7 +26,7 @@
             Iam a passionate android and web devoleper, i have good knowledge at Android(Java) and CodeIgniter(Php, Jquery). I also have good knowledge about data structure and 
             usually i use Oracle or PhpMyAdmin for database. </p>
             <p>The thing I've been excited about lately are Artificial Intelligence, Expert Systems, Data Science and Augmented Reality.</p>
-        </div>
+        </div> -->
 
         <div class="footer">
             <h3>Find me in</h3>

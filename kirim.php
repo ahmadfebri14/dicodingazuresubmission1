@@ -13,7 +13,7 @@
   ?>
 <body>
 
-<br><b>
+<br>
 <div class="container">
     <!-- Content here -->
 		<form action="./simpan_gambar.php" method="POST" enctype="multipart/form-data">
