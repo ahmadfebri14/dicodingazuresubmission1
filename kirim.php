@@ -16,7 +16,7 @@ window.onload = function() {
 		<form action="./simpan_gambar.php" method="POST" enctype="multipart/form-data">
 		<div class="container">
 		<h3>Analyze image:</h3>
-   		 Enter the URL to an image, then click the <strong>Analyze image</strong> button.
+   		 Choose an image, then click the <strong>Analyze image</strong> button.
     	<br><br>
 		  	<div class="form-group row">
 				<div class="col-sm-10">
@@ -86,13 +86,13 @@ window.onload = function() {
 </script>
 
 <div class="container">
-    <div class="form-group row">
+    <!-- <div class="form-group row">
 			<label for="inputEmail3" class="col-sm-2 col-form-label">URL</label>
 			<div class="col-sm-10">
                 <input type="text" name="inputImage" id="inputImage" class="form-control"
                 value="<?php echo $_SESSION['name']; ?>"/>
 			</div>
-		  </div>
+		  </div> -->
 		  
 		  <!-- <div class="form-group row">
 			<div class="col-sm-10">

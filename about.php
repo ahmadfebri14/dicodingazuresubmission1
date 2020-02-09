@@ -1,3 +1,6 @@
+<?php 
+ include 'head.php';
+?>
 <body>
 
         <div class="content">
