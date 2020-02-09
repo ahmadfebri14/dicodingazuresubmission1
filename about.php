@@ -8,7 +8,7 @@
             <h1>Ahmad Febri</h1>
             <h4>Junior Android and Web Developer</h4>
             <h2>About me</h2>
-            <p>Hello i'm Ahmad Febri. I'm a computer science student at Stikom Surabaya which now changes its name to Universitas Dinamika Surabaya.
+            <p>Hello i'm Febri. I'm a computer science student at Stikom Surabaya which now changes its name to Universitas Dinamika Surabaya.
             Iam a passionate android and web devoleper, i have good knowledge at Android(Java) and CodeIgniter(Php, Jquery). I also have good knowledge about data structure and 
             usually i use Oracle or PhpMyAdmin for database. </p>
             <p>The thing I've been excited about lately are Artificial Intelligence, Expert Systems, Data Science and Augmented Reality.</p>
