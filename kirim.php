@@ -19,7 +19,7 @@
 		<form action="./simpan_gambar.php" method="POST" enctype="multipart/form-data">
 		<div class="container">
 		<h3>Analyze image</h3>
-		<span> Choose an image, then click the <strong>Analyze image</strong> button. </span>
+		<span> Choose an image, then click the <strong>Upload</strong> button. </span>
    		 
     	<br><br>
 		  	<div class="form-group row">
