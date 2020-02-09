@@ -91,7 +91,7 @@ window.onload = function() {
 			<label for="inputEmail3" class="col-sm-2 col-form-label">URL</label>
 			<div class="col-sm-10"> -->
                 <input type="hidden" name="inputImage" id="inputImage" class="form-control"
-                value="<?php echo $_SESSION['name']; ?>"/> -->
+                value="<?php echo $_SESSION['name']; ?>"/> 
 			<!-- </div>
 		  </div> -->
 		  
