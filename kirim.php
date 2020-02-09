@@ -3,6 +3,13 @@
  session_start();
   ?>
 <body>
+
+<script>
+window.onload = function() {
+	processImage()
+};
+</script>
+
 <br><b>
 <div class="container">
     <!-- Content here -->
@@ -77,8 +84,6 @@
         });
     };
 </script>
- 
-
 
 <div class="container">
     <div class="form-group row">

@@ -18,7 +18,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sansita&display=swap" rel="stylesheet">
-    
+
 </head>
 <body> 
 <?php include 'connection.php'?>
@@ -37,7 +37,7 @@
         <a class="nav-link" href="view_data.php">Data</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="view_data.php">About Me</a>
+        <a class="nav-link" href="about.php">About Me</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
