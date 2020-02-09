@@ -15,8 +15,9 @@ window.onload = function() {
     <!-- Content here -->
 		<form action="./simpan_gambar.php" method="POST" enctype="multipart/form-data">
 		<div class="container">
-		<h3>Analyze image:</h3>
-   		 Choose an image, then click the <strong>Analyze image</strong> button.
+		<h3>Analyze image</h3>
+		<span> Choose an image, then click the <strong>Analyze image</strong> button. </span>
+   		 
     	<br><br>
 		  	<div class="form-group row">
 				<div class="col-sm-10">
