@@ -53,9 +53,14 @@
     </ul>
     <form class="form-inline my-2 my-lg-0">
       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-info my-2 my-sm-0" type="submit">Search</button>
+      <button class="btn btn-info my-2 my-sm-0" type="submit" onclick="home()">Search</button>
     </form>
   </div>
  </nav>
+ <script type="text/javascript">
+        function home() {
+            alert("Maaf fitur belum tersedia.");
+        }
+    </script>
 </body>
 </html>
