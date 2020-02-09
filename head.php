@@ -18,7 +18,8 @@
 
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sansita&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
 </head>
 <body> 
 <?php include 'connection.php'?>
@@ -34,7 +35,7 @@
         <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="view_data.php">Data</a>
+        <a class="nav-link" href="kirim.php">Analyze Image</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" href="about.php">About Me</a>
@@ -44,7 +45,7 @@
           Submission 2
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="kirim.php">Upload Image</a>
+          <a class="dropdown-item" href="view_data.php">View Data</a>
           <a class="dropdown-item" href="view_image.php">Gallery</a>
           <!-- <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="analyze_image.php">Analyze Image</a> -->
