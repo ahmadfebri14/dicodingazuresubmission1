@@ -1,14 +1,17 @@
  <?php 
  include 'head.php';
  session_start();
+ if($_SESSION['name'] != ""){
+	?>
+	<script>
+		window.onload = function() {
+			processImage()
+		};
+	</script>
+<?php
+ }
   ?>
 <body>
-
-<script>
-window.onload = function() {
-	processImage()
-};
-</script>
 
 <br><b>
 <div class="container">
