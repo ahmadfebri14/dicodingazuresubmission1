@@ -69,7 +69,7 @@ $fileToUpload = $nama;
 
     session_start();
     $_SESSION['name'] = "https://febriwebapp.blob.core.windows.net/".$containerName."/".$fileToUpload;
-    echo '<script> window.location.href="./analyze_image.php"; </script>';
+    echo '<script> window.location.href="./kirim.php"; </script>';
     
 }
 ?>

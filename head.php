@@ -12,8 +12,13 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
    
   <!--Link ajax (For Microsoft Computer Vision) -->
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
+	    <!-- <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sansita&display=swap" rel="stylesheet">
+    
 </head>
 <body> 
 <?php include 'connection.php'?>
@@ -31,6 +36,9 @@
       <li class="nav-item">
         <a class="nav-link" href="view_data.php">Data</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="view_data.php">About Me</a>
+      </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Submission 2
@@ -38,8 +46,8 @@
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="kirim.php">Upload Image</a>
           <a class="dropdown-item" href="view_image.php">Gallery</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="analyze_image.php">Analyze Image</a>
+          <!-- <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="analyze_image.php">Analyze Image</a> -->
         </div>
     </ul>
     <form class="form-inline my-2 my-lg-0">
