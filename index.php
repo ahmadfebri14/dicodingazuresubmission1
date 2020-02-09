@@ -7,7 +7,6 @@
     <p class="lead">If you accidentally found this website, feel free to fill  in the form below 🍻</p>
   </div>
   
-  
 <div class="container">
   <!-- Content here -->
 		<form action="./add.php?act=add" method="POST">

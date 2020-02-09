@@ -18,7 +18,6 @@
 
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Sansita&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="style.css">
     
 </head>
 <body> 
